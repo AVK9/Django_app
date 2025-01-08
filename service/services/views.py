@@ -15,3 +15,4 @@ class SubscriptionView(ReadOnlyModelViewSet):
                                                                'user__email'))
         )
     serializer_class = SubscriptionSerializer
+
