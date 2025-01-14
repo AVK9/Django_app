@@ -6,7 +6,6 @@ from clients.models import Client
 from services.models import Subscription
 from services.serializers import SubscriptionSerializer
 
-
 class SubscriptionView(ReadOnlyModelViewSet):
     queryset = Subscription.objects.all().prefetch_related(
         'plan',
